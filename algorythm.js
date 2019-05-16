@@ -82,7 +82,7 @@ console.log(convertToRoman(97));
  *********************** Search and Replace
  ***************(find a word and replace it with another)
  **************************************************************************************/
-
+/*
 function replacer(input, stringToRemove, stringToAdd) {
   return input.replace(stringToRemove, stringToAdd);
 }
@@ -94,3 +94,18 @@ console.log(
     "word"
   )
 );
+*/
+
+/**************************************************************************************
+ *********************** Join and sort arrays
+ **************************************************************************************/
+
+function joinAndSort(arr, ...arrs) {
+  //Joinand sort all elements in inputed arrays
+  let jointedAndSortedArr = arr.concat(...arrs).sort();
+
+  //Remove duplicates
+  return [...new Set(jointedAndSortedArr)];
+}
+
+console.log(joinAndSort([1], [2, 5, 6], [7, 2, 1], [8, -3, 0]));
