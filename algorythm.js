@@ -45,7 +45,7 @@ console.log(unite([1, 2, 3], [5, 4, 3], [6, 5, 3], [1, 1, 2]));
 /****************************************************************************
  *********************** Convert number to Roman number
  ***************************************************************************/
-
+/*
 function convertToRoman(inputNumber) {
   decimalValuesArray = [1000, 900, 500, 400, 100, 90, 50, 40, 10, 9, 5, 4, 1];
   romanValuesArray = [
@@ -76,3 +76,21 @@ function convertToRoman(inputNumber) {
 }
 console.log(convertToRoman(1036));
 console.log(convertToRoman(97));
+*/
+
+/**************************************************************************************
+ *********************** Search and Replace
+ ***************(find a word and replace it with another)
+ **************************************************************************************/
+
+function replacer(input, stringToRemove, stringToAdd) {
+  return input.replace(stringToRemove, stringToAdd);
+}
+
+console.log(
+  replacer(
+    "First word, second word, third sentence, fourth word",
+    "sentence",
+    "word"
+  )
+);
