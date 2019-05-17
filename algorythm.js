@@ -99,7 +99,7 @@ console.log(
 /**************************************************************************************
  *********************** Join and sort arrays
  **************************************************************************************/
-
+/*
 function joinAndSort(arr, ...arrs) {
   //Joinand sort all elements in inputed arrays
   let jointedAndSortedArr = arr.concat(...arrs).sort();
@@ -109,3 +109,18 @@ function joinAndSort(arr, ...arrs) {
 }
 
 console.log(joinAndSort([1], [2, 5, 6], [7, 2, 1], [8, -3, 0]));
+*/
+
+/**************************************************************************************
+ ********************* Find 1st number that is devidable by given number
+ **************************************************************************************/
+
+function findDevidable(arr, numToDevideBy) {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % numToDevideBy === 0) {
+      return arr[i];
+    }
+  }
+  //return firstDevidable;
+}
+console.log(findDevidable([1, 2, 3, 4, 20, 10], 5));
